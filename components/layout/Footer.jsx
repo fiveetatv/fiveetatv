@@ -15,7 +15,7 @@ export default function Footer() {
               <Image src="/assets/logo.png" alt="Fiveetatv Logo" width={150} height={38} className={`w-[120px] md:w-[150px] lg:w-[192px] h-auto`} />
             </div>
             <p className="text-xs sm:text-sm text-slate-500 font-light leading-relaxed max-w-md">
-              Premium Ayurvedic wellness inspired by the five natural elements. Crafted with intention for balanced living.
+              Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur. Inspired by the five natural elements, crafted with intention for balanced living.
             </p>
             <div className="flex gap-2 md:gap-3 pt-2">
               <a href="https://www.instagram.com/fiveetatvofficial?igsh=MTl4Y3p2MHJqZTRiOA==" target="_blank" rel="noopener noreferrer" className="h-10 w-10 md:h-11 md:w-11 rounded-full border border-slate-200 flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all duration-500 group">

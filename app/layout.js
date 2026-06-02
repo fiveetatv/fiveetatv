@@ -14,7 +14,7 @@ const organizationSchema = {
   "name": "Fiveetatv",
   "url": "https://fiveetatv.com",
   "logo": "https://fiveetatv.com/assets/logo.png",
-  "description": "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul Gour & Suraj Gaur in Delhi, India. Natural Ayurvedic products for sugar balance, digestive health, and overall wellness.",
+  "description": "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur in Delhi, India. Natural Ayurvedic products for sugar balance, digestive health, and overall wellness.",
   "founders": [
     {
       "@type": "Person",
@@ -22,7 +22,7 @@ const organizationSchema = {
     },
     {
       "@type": "Person",
-      "name": "Suraj Gaur"
+      "name": "Suresh Gaur"
     }
   ],
   "address": {
@@ -48,9 +48,12 @@ export const metadata = {
     default: "Fiveetatv | Premium Ayurvedic Wellness Products in Delhi, India",
     template: "%s | Fiveetatv",
   },
-  description: "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul Gour & Suraj Gaur in Delhi, India. Natural Ayurvedic products for sugar balance, digestive health, and overall wellness. 100% natural, lab-tested formulations.",
+  description: "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur in Delhi, India. Natural Ayurvedic products for sugar balance, digestive health, and overall wellness. 100% natural, lab-tested formulations.",
   keywords: [
     "Fiveetatv",
+    "Fiveeta",
+    "founders of Fiveetatv",
+    "founders of Fiveeta",
     "Ayurvedic products",
     "Ayurveda India",
     "herbal supplements",
@@ -60,7 +63,7 @@ export const metadata = {
     "digestive health",
     "Ayurvedic wellness Delhi",
     "Rahul Gour",
-    "Suraj Gaur",
+    "Suresh Gaur",
     "traditional Ayurveda",
     "herbal remedies",
     "Ayurvedic formulations",
@@ -70,7 +73,7 @@ export const metadata = {
     "Ayurvedic supplements",
     "wellness products"
   ],
-  authors: [{ name: "Rahul Gour", url: "https://fiveetatv.com" }, { name: "Suraj Gaur", url: "https://fiveetatv.com" }],
+  authors: [{ name: "Rahul Gour", url: "https://fiveetatv.com" }, { name: "Suresh Gaur", url: "https://fiveetatv.com" }],
   creator: "Fiveetatv",
   publisher: "Fiveetatv",
   formatDetection: {
@@ -84,7 +87,7 @@ export const metadata = {
     url: "https://fiveetatv.com",
     siteName: "Fiveetatv",
     title: "Fiveetatv | Premium Ayurvedic Wellness Products",
-    description: "Premium Ayurvedic wellness brand founded by Rahul Gour & Suraj Gaur. Natural products for sugar balance, digestive health, and overall wellness.",
+    description: "Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur. Natural products for sugar balance, digestive health, and overall wellness.",
     images: [
       {
         url: "/assets/logo.png",
@@ -97,7 +100,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Fiveetatv | Premium Ayurvedic Wellness Products",
-    description: "Premium Ayurvedic wellness brand founded by Rahul Gour & Suraj Gaur. Natural products for sugar balance, digestive health, and overall wellness.",
+    description: "Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur. Natural products for sugar balance, digestive health, and overall wellness.",
     images: ["/assets/logo.png"],
     creator: "@fiveetatv",
   },

@@ -33,13 +33,16 @@ export async function generateMetadata({ params }) {
     keywords: [
       product.name,
       "Fiveetatv",
+      "Fiveeta",
+      "founders of Fiveeta",
+      "founders of Fiveetatv",
       "Ayurvedic products",
       "herbal supplements",
       "natural wellness",
       product.category || "Ayurvedic medicine",
       "Ayurvedic wellness Delhi",
       "Rahul Gour",
-      "Suraj Gaur",
+      "Suresh Gaur",
       ...product.ingredients || [],
     ],
     openGraph: {
