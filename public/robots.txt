@@ -1,0 +1,21 @@
+# Fiveetatv Ayurvedic Wellness - Robots.txt
+# https://fiveetatv.com
+
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /admin/
+Disallow: /account/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /login/
+Disallow: /register/
+Disallow: /wishlist/
+Disallow: /search?
+
+# Sitemap
+Sitemap: https://fiveetatv.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

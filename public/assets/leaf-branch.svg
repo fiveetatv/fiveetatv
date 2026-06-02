@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4B7E41"/>
+      <stop offset="100%" stop-color="#7EB56D"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+  </defs>
+  <!-- Stem -->
+  <path d="M10,190 Q50,150 150,50" stroke="#3A5A30" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Leaf 1 (Bottom Left) -->
+  <g transform="translate(40, 160) rotate(-45)">
+    <path d="M0,0 Q-30,-40 0,-80 Q30,-40 0,0" fill="url(#leafGrad)"/>
+    <path d="M0,0 Q0,-40 0,-80" stroke="#3A5A30" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Leaf 2 (Middle Right) -->
+  <g transform="translate(80, 120) rotate(45)">
+    <path d="M0,0 Q-25,-35 0,-70 Q25,-35 0,0" fill="url(#leafGrad)"/>
+    <path d="M0,0 Q0,-35 0,-70" stroke="#3A5A30" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Leaf 3 (Top Left) -->
+  <g transform="translate(110, 90) rotate(-30)">
+    <path d="M0,0 Q-20,-30 0,-60 Q20,-30 0,0" fill="url(#leafGrad)"/>
+    <path d="M0,0 Q0,-30 0,-60" stroke="#3A5A30" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Leaf 4 (Top Tip) -->
+  <g transform="translate(150, 50) rotate(15)">
+    <path d="M0,0 Q-15,-25 0,-50 Q15,-25 0,0" fill="url(#leafGrad)"/>
+    <path d="M0,0 Q0,-25 0,-50" stroke="#3A5A30" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>

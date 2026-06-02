@@ -1,0 +1,25 @@
+{
+  "name": "Fiveetatv - Ayurvedic Wellness",
+  "short_name": "Fiveetatv",
+  "description": "Premium Ayurvedic wellness products for sugar balance, digestive health, and overall wellness.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#658518",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["health", "shopping", "lifestyle"],
+  "lang": "en-IN",
+  "dir": "ltr"
+}
