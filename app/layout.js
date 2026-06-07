@@ -14,15 +14,15 @@ const organizationSchema = {
   "name": "Fiveetatv",
   "url": "https://fiveetatv.com",
   "logo": "https://fiveetatv.com/assets/logo.png",
-  "description": "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur in Delhi, India. Natural Ayurvedic products for sugar balance, digestive health, and overall wellness.",
+  "description": "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul & Suresh in Delhi, India. Natural Ayurvedic products for sugar balance, digestive health, and overall wellness.",
   "founders": [
     {
       "@type": "Person",
-      "name": "Rahul Gour"
+      "name": "Rahul"
     },
     {
       "@type": "Person",
-      "name": "Suresh Gaur"
+      "name": "Suresh"
     }
   ],
   "address": {
@@ -36,9 +36,8 @@ const organizationSchema = {
     "contactType": "customer service"
   },
   "sameAs": [
-    "https://www.instagram.com/fiveetatv",
-    "https://www.facebook.com/fiveetatv",
-    "https://twitter.com/fiveetatv"
+    "https://www.instagram.com/fiveetatvofficial",
+    "https://www.facebook.com/share/18iTV2DwvQ/"
   ]
 };
 
@@ -48,7 +47,7 @@ export const metadata = {
     default: "Fiveetatv | Premium Ayurvedic Wellness Products in Delhi, India",
     template: "%s | Fiveetatv",
   },
-  description: "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur in Delhi, India. Natural Ayurvedic products for sugar balance, digestive health, and overall wellness. 100% natural, lab-tested formulations.",
+  description: "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul & Suresh in Delhi, India. Natural Ayurvedic products for sugar balance, digestive health, and overall wellness. 100% natural, lab-tested formulations.",
   keywords: [
     "Fiveetatv",
     "Fiveeta",
@@ -62,8 +61,8 @@ export const metadata = {
     "sugar balance",
     "digestive health",
     "Ayurvedic wellness Delhi",
-    "Rahul Gour",
-    "Suresh Gaur",
+    "Rahul",
+    "Suresh",
     "traditional Ayurveda",
     "herbal remedies",
     "Ayurvedic formulations",
@@ -73,7 +72,7 @@ export const metadata = {
     "Ayurvedic supplements",
     "wellness products"
   ],
-  authors: [{ name: "Rahul Gour", url: "https://fiveetatv.com" }, { name: "Suresh Gaur", url: "https://fiveetatv.com" }],
+  authors: [{ name: "Rahul", url: "https://fiveetatv.com" }, { name: "Suresh", url: "https://fiveetatv.com" }],
   creator: "Fiveetatv",
   publisher: "Fiveetatv",
   formatDetection: {
@@ -87,7 +86,7 @@ export const metadata = {
     url: "https://fiveetatv.com",
     siteName: "Fiveetatv",
     title: "Fiveetatv | Premium Ayurvedic Wellness Products",
-    description: "Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur. Natural products for sugar balance, digestive health, and overall wellness.",
+    description: "Premium Ayurvedic wellness brand founded by Rahul & Suresh. Natural products for sugar balance, digestive health, and overall wellness.",
     images: [
       {
         url: "/assets/logo.png",
@@ -100,7 +99,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Fiveetatv | Premium Ayurvedic Wellness Products",
-    description: "Premium Ayurvedic wellness brand founded by Rahul Gour & Suresh Gaur. Natural products for sugar balance, digestive health, and overall wellness.",
+    description: "Premium Ayurvedic wellness brand founded by Rahul & Suresh. Natural products for sugar balance, digestive health, and overall wellness.",
     images: ["/assets/logo.png"],
     creator: "@fiveetatv",
   },
@@ -140,7 +139,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <LenisProvider>
             <Navbar />
-            <main className="w-full flex-1 flex flex-col lg:pt-[92px] relative z-10">{children}</main>
+            <main className="w-full flex-1 flex flex-col lg:pt-[128px] relative z-10">{children}</main>
             <Footer />
             <CookieConsent />
             

@@ -25,15 +25,15 @@ const AnnouncementBar = () => (
       <div className="hidden md:flex items-center gap-6">
         <div className="flex items-center gap-1.5">
           <Phone size={12} className="text-white/80" />
-          <span>Call Now: <a href="tel:+919318445297" className="hover:underline">+91 9318445297</a></span>
+          <span>Call Now: <a href="tel:+919318445297" className="hover:underline">+91 9318445297</a> / <a href="tel:+919220251059" className="hover:underline">+91 9220251059</a></span>
         </div>
       </div>
 
       <div className="flex items-center gap-4">
-        <a href="#" className="hover:text-white/80 transition-colors">
+        <a href="https://www.facebook.com/share/18iTV2DwvQ/" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
           <FaFacebookF size={12} />
         </a>
-        <a href="#" className="hover:text-white/80 transition-colors">
+        <a href="https://www.instagram.com/fiveetatvofficial?igsh=cDhyOTBkYm1tcmR5" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
           <FaInstagram size={14} />
         </a>
         <a href="https://wa.me/919318445297" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
@@ -363,10 +363,10 @@ export default function Navbar() {
                 <a href="https://wa.me/919318445297" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <FaWhatsapp size={20} />
                 </a>
-                <a href="#" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                <a href="https://www.instagram.com/fiveetatvofficial?igsh=cDhyOTBkYm1tcmR5" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <FaInstagram size={20} />
                 </a>
-                <a href="#" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                <a href="https://www.facebook.com/share/18iTV2DwvQ/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <FaFacebookF size={20} />
                 </a>
               </div>
