@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Search as SearchIcon, FileText, X, File, User, ShoppingCart } from "lucide-react";
 import PageTransition from "@/components/ui/PageTransition";
 import { SEARCH_PAGES } from "@/components/layout/nav-config";
@@ -113,9 +114,12 @@ export default function SearchPage() {
                     >
                       <Link href={`/product/${product.slug}`} className="block">
                         <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-muted mb-4">
-                          <img
+                          <Image
                             src={product.images?.[0] || '/placeholder.png'}
                             alt={product.name}
+                            fill
+                            quality={75}
+                            sizes="(max-width: 768px) 100vw, 33vw"
                             className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                           />
                         </div>

@@ -4,7 +4,7 @@ import ProductDetails from "@/components/product/ProductDetails";
 import { connectDB } from "@/lib/db";
 import Product from "@/models/Product";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 async function getProduct(slug) {
   await connectDB();
@@ -41,8 +41,8 @@ export async function generateMetadata({ params }) {
       "natural wellness",
       product.category || "Ayurvedic medicine",
       "Ayurvedic wellness Delhi",
-      "Rahul",
-      "Suresh",
+      "Suraj Gaur",
+      "Rahul Gour",
       ...product.ingredients || [],
     ],
     openGraph: {

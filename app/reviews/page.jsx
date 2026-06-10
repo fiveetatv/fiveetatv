@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote, MessageSquare } from 'lucide-react';
+import Image from 'next/image';
 import PageTransition from '@/components/ui/PageTransition';
 import FloatingLeaf from '@/components/ui/FloatingLeaf';
 
@@ -151,9 +152,12 @@ export default function ReviewsPage() {
 
                 <div className="flex items-center gap-4 pt-6 border-t border-slate-50">
                   <div className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-white shadow-lg">
-                    <img 
+                    <Image 
                       src={rev.img} 
                       alt={rev.name} 
+                      width={56}
+                      height={56}
+                      quality={75}
                       className="h-full w-full object-cover object-top"
                     />
                   </div>

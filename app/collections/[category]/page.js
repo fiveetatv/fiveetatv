@@ -4,7 +4,7 @@ import { connectDB } from "@/lib/db";
 import Product from "@/models/Product";
 import CollectionContent from "./CollectionContent";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 async function getProducts(category) {
   await connectDB();
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }) {
       "herbal supplements",
       "natural wellness",
       "Ayurvedic wellness Delhi",
-      "Rahul",
-      "Suresh",
+      "Suraj Gaur",
+      "Rahul Gour",
       "Ayurvedic collection"
     ],
     openGraph: {

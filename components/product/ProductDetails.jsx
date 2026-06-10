@@ -403,7 +403,7 @@ export default function ProductDetails({ product, relatedProducts }) {
                       src={activeImg || product.images?.[0] || '/placeholder.png'} 
                       alt={product.name} 
                       fill 
-                      quality={95}
+                      quality={75}
                       placeholder="blur"
                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMCwsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBEQCEAwEPwAB//9k="
                       className="object-contain select-none pointer-events-none p-2 sm:p-0" 
@@ -489,7 +489,7 @@ export default function ProductDetails({ product, relatedProducts }) {
                     onClick={() => setActiveImg(img)}
                     className={`relative w-14 h-14 sm:w-20 sm:h-24 overflow-hidden rounded-xl flex-shrink-0 snap-start transition-all ${activeImg === img ? 'ring-2 ring-accent ring-offset-2' : 'opacity-60'}`}
                   >
-                    <Image src={img} alt={`Thumb ${idx}`} fill quality={85} placeholder="blur" blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMCwsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBEQCEAwEPwAB//9k=" className="object-cover" />
+                    <Image src={img} alt={`Thumb ${idx}`} fill quality={75} placeholder="blur" blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMCwsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBEQCEAwEPwAB//9k=" className="object-cover" />
                   </button>
                 ))}
                 {videoSrc && (
@@ -1088,9 +1088,12 @@ export default function ProductDetails({ product, relatedProducts }) {
               <div className="flex items-center gap-3 md:gap-4 pt-2 border-t border-border/50">
                 <div className="relative flex-shrink-0">
                   {review.image ? (
-                    <img 
+                    <Image 
                       src={review.image} 
                       alt={review.name} 
+                      width={56}
+                      height={56}
+                      quality={75}
                       className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover object-top shadow-lg border-2 border-white"
                     />
                   ) : (

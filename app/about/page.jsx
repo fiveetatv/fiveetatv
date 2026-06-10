@@ -96,7 +96,7 @@ export default function AboutPage() {
               </div>
               <div className="space-y-6 text-foreground/60 font-light text-base leading-relaxed">
                 <p>
-                  <span className="text-foreground font-medium">Fiveetatv</span> is an Ayurvedic wellness brand founded by <span className="text-foreground font-medium">Rahul & Suresh</span> in Delhi, India. With a mission to provide natural and effective Ayurvedic products for a healthier lifestyle, we are committed to bringing the ancient wisdom of Ayurveda to modern wellness routines.
+                  <span className="text-foreground font-medium">Fiveetatv</span> is an Ayurvedic wellness brand founded by <span className="text-foreground font-medium">Suraj Gaur & Rahul Gour</span> in Delhi, India. With a mission to provide natural and effective Ayurvedic products for a healthier lifestyle, we are committed to bringing the ancient wisdom of Ayurveda to modern wellness routines.
                 </p>
                 <p>
                   At Fiveetatv, we focus on quality, purity, and traditional Ayurvedic formulations to ensure the best results for our customers. Our journey is rooted in the principles of the five elements—Akasha, Vayu, Agni, Jala, and Prithvi—striving to harmonize these fundamental forces within the human body.
@@ -141,8 +141,8 @@ export default function AboutPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               {[
-                { name: "Rahul", role: "Co-Founder", desc: "Passionate about bringing traditional Ayurvedic wisdom to modern wellness solutions with a focus on purity and authenticity." },
-                { name: "Suresh", role: "Co-Founder", desc: "Dedicated to creating high-quality Ayurvedic formulations that bridge ancient knowledge with contemporary health needs." },
+                { name: "Suraj Gaur", role: "Co-Founder", desc: "Dedicated to creating high-quality Ayurvedic formulations that bridge ancient knowledge with contemporary health needs." },
+                { name: "Rahul Gour", role: "Co-Founder", desc: "Passionate about bringing traditional Ayurvedic wisdom to modern wellness solutions with a focus on purity and authenticity." },
               ].map((founder, i) => (
                 <motion.div 
                   key={founder.name}

@@ -3,7 +3,7 @@ import CollectionContent from "./CollectionContent";
 import { connectDB } from "@/lib/db";
 import Product from "@/models/Product";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 async function getAllProducts() {
   await connectDB();

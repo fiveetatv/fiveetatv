@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 import FloatingLeaf from '@/components/ui/FloatingLeaf';
 
 const reviews = [
@@ -152,9 +153,12 @@ const Review = () => {
                   <div className="flex items-center gap-4 pt-8 border-t border-slate-50">
                     <div className="relative flex-shrink-0">
                         {rev.img ? (
-                          <img 
+                          <Image 
                             src={rev.img} 
                             alt={rev.name} 
+                            width={56}
+                            height={56}
+                            quality={75}
                             className="w-14 h-14 rounded-full object-cover object-top shadow-lg border-2 border-white"
                           />
                         ) : (

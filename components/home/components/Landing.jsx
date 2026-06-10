@@ -38,18 +38,30 @@ export default function Landing() {
         <div className="flex h-full">
           {slides.map((slide, index) => (
             <div key={index} className="relative flex-[0_0_100%] min-w-0 h-full">
-              <picture className="relative block w-full h-full">
-                <source srcSet={`${slide.mobile}?v=2`} media="(max-width: 767px)" />
+              {/* Desktop Image */}
+              <div className="hidden md:block absolute inset-0 w-full h-full">
                 <Image 
                   src={`${slide.desktop}?v=2`} 
                   alt={slide.title} 
                   fill 
-                  quality={95}
+                  quality={75}
                   className="object-contain"
                   sizes="100vw"
                   priority={index === 0}
                 />
-              </picture>
+              </div>
+              {/* Mobile Image */}
+              <div className="block md:hidden absolute inset-0 w-full h-full">
+                <Image 
+                  src={`${slide.mobile}?v=2`} 
+                  alt={slide.title} 
+                  fill 
+                  quality={75}
+                  className="object-contain"
+                  sizes="100vw"
+                  priority={index === 0}
+                />
+              </div>
             </div>
           ))}
         </div>

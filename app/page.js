@@ -4,11 +4,11 @@ import { connectDB } from "@/lib/db";
 import Product from "@/models/Product";
 import { seedProductsIfEmpty } from "@/lib/seed";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export const metadata = {
   title: "Fiveetatv | Premium Ayurvedic Wellness Products in Delhi, India",
-  description: "Fiveetatv - Premium Ayurvedic wellness brand founded by Rahul & Suresh in Delhi, India. Shop natural Ayurvedic products for sugar balance, digestive health, and overall wellness. 100% natural, lab-tested formulations.",
+  description: "Fiveetatv - Premium Ayurvedic wellness brand founded by Suraj Gaur & Rahul Gour in Delhi, India. Shop natural Ayurvedic products for sugar balance, digestive health, and overall wellness. 100% natural, lab-tested formulations.",
   keywords: [
     "Fiveetatv",
     "Fiveeta",
@@ -22,8 +22,8 @@ export const metadata = {
     "sugar balance",
     "digestive health",
     "Ayurvedic wellness Delhi",
-    "Rahul",
-    "Suresh",
+    "Suraj Gaur",
+    "Rahul Gour",
     "traditional Ayurveda",
     "herbal remedies",
     "Ayurvedic formulations",
@@ -38,7 +38,7 @@ export const metadata = {
     locale: "en_IN",
     url: "https://fiveetatv.com",
     title: "Fiveetatv | Premium Ayurvedic Wellness Products",
-    description: "Premium Ayurvedic wellness brand founded by Rahul & Suresh. Natural products for sugar balance, digestive health, and overall wellness.",
+    description: "Premium Ayurvedic wellness brand founded by Suraj Gaur & Rahul Gour. Natural products for sugar balance, digestive health, and overall wellness.",
     images: [
       {
         url: "/assets/logo.png",
@@ -51,7 +51,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Fiveetatv | Premium Ayurvedic Wellness Products",
-    description: "Premium Ayurvedic wellness brand founded by Rahul & Suresh. Natural products for sugar balance, digestive health, and overall wellness.",
+    description: "Premium Ayurvedic wellness brand founded by Suraj Gaur & Rahul Gour. Natural products for sugar balance, digestive health, and overall wellness.",
     images: ["/assets/logo.png"],
   },
 };
