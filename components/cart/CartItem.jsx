@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function CartItem({ item, onUpdateQuantity, onRemove }) {
   return (
-    <div className="grid grid-cols-[1fr_auto] md:grid-cols-[auto_1fr_auto_auto] gap-6 md:gap-8 items-center py-8 border-b border-border group">
+    <div className="grid grid-cols-[1fr_auto] k md:grid-cols-[auto_1fr_auto_auto] gap-6 md:gap-8 items-center py-8 border-b border-border group">
       
       {/* Image */}
       <Link href={`/product/${item.slug}`} className="relative h-32 w-32 md:h-24 md:w-24 overflow-hidden rounded-2xl bg-white/50 border border-border shadow-sm block flex-shrink-0">
