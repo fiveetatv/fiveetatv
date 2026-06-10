@@ -73,7 +73,11 @@ const productsSeed = [
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195351/1777188300657_rebi6i.png",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1780850539/Product_background_clean_white_202606072212_pbiwbp.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195352/Picsart_26-04-26_13-29-20-114.jpg_pcs4tt.jpg",
+<<<<<<< HEAD
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1781105594/add_more_testominials_1st_image_202606102048_xh8ut3.jpg",
+=======
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1780851172/5_kk8kp0.webp_202606072222_kr2kjz.jpg",
+>>>>>>> 4837faba3b65f4c05f343262932e7bc0408c7d6f
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195351/Picsart_26-04-26_13-28-10-997.jpg_kayxcb.jpg",
     ],
     formulaimage: "https://res.cloudinary.com/dqk8v040t/image/upload/v1777224607/Gemini_Generated_Image_5en9xo5en9xo5en9_plvmk1.png",
@@ -150,7 +154,11 @@ const productsSeed = [
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195353/1777193733492_toeqjr.png",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195352/Picsart_26-04-26_14-30-55-002.jpg_luyjfr.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1779443182/Change_features_to_this_202605221511_euem6e.jpg",
+<<<<<<< HEAD
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1781105594/add_more_testominials_1st_image_202606102048_xh8ut3.jpg",
+=======
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1780851172/5_kk8kp0.webp_202606072222_kr2kjz.jpg",
+>>>>>>> 4837faba3b65f4c05f343262932e7bc0408c7d6f
     ],
     videoUrl: "rSHVqwhmN7h7TcJMz5sV4015UZ5KlXBtVBf6EQ1fs00uA",
     formulaimage: "https://res.cloudinary.com/dqk8v040t/image/upload/v1777224607/Gemini_Generated_Image_u9yomou9yomou9yo_stdhwj.png",
@@ -235,7 +243,11 @@ const productsSeed = [
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195351/1777191660191_n51lsm.png",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1780393609/change_product_of_1st_image_202606021516_hec084.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1780393757/change_product_of_1st_image_202606021519_p8ggyx.jpg",
+<<<<<<< HEAD
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1781105594/add_more_testominials_1st_image_202606102048_xh8ut3.jpg",
+=======
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1780851172/5_kk8kp0.webp_202606072222_kr2kjz.jpg"
+>>>>>>> 4837faba3b65f4c05f343262932e7bc0408c7d6f
     ],
     formulaimage: "https://res.cloudinary.com/dqk8v040t/image/upload/v1777224607/Gemini_Generated_Image_psf0w6psf0w6psf0_yzzqli.png",
     rating: 4.8,

@@ -139,7 +139,11 @@ export default function RootLayout({ children }) {
         <Providers>
           <LenisProvider>
             <Navbar />
+<<<<<<< HEAD
             <main className="w-full flex-1 flex flex-col lg:pt-[128px] pb-[72px] lg:pb-0 relative z-10">{children}</main>
+=======
+            <main className="w-full flex-1 flex flex-col lg:pt-[128px] relative z-10">{children}</main>
+>>>>>>> 4837faba3b65f4c05f343262932e7bc0408c7d6f
             <Footer />
             <CookieConsent />
             
