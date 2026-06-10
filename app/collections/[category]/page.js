@@ -29,8 +29,8 @@ export async function generateMetadata({ params }) {
       "herbal supplements",
       "natural wellness",
       "Ayurvedic wellness Delhi",
-      "Rahul Gour",
-      "Suresh Gaur",
+      "Rahul",
+      "Suresh",
       "Ayurvedic collection"
     ],
     openGraph: {

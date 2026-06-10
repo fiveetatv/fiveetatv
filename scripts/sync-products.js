@@ -32,7 +32,7 @@ const productsSeed = [
       madeInIndia: true,
       ayurvedicFormulation: true
     },
-    featureImages: ["/feature/1.avif", "/feature/2.avif", "/feature/3.avif"],
+    featureImages: ["/feature/1.svg", "/feature/2.svg", "/feature/3.svg", "/feature/4.svg"],
     faqs: [
       {
         question: "Is Paachan Sathi effective for chronic acidity?",
@@ -68,12 +68,12 @@ const productsSeed = [
       }
     ],
     images: [
-      "https://res.cloudinary.com/dqk8v040t/image/upload/v1779373548/Ajwain_Ajwain_Saunf_Saunf_Hing_202605211955_aadeci.jpg",
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1781105607/Untitled_design_1_iclcqz.png",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195351/Picsart_26-04-26_13-20-49-621.jpg_fgd5tl.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195351/1777188300657_rebi6i.png",
-      "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195351/1777188683196_lxywjn.png",
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1780850539/Product_background_clean_white_202606072212_pbiwbp.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195352/Picsart_26-04-26_13-29-20-114.jpg_pcs4tt.jpg",
-      "https://res.cloudinary.com/dqk8v040t/image/upload/v1776877675/5_kk8kp0.webp",
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1781105594/add_more_testominials_1st_image_202606102048_xh8ut3.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195351/Picsart_26-04-26_13-28-10-997.jpg_kayxcb.jpg",
     ],
     formulaimage: "https://res.cloudinary.com/dqk8v040t/image/upload/v1777224607/Gemini_Generated_Image_5en9xo5en9xo5en9_plvmk1.png",
@@ -97,7 +97,7 @@ const productsSeed = [
       "Helps Boost Immunity*",
       "Helps Detoxify Body*"
     ],
-    featureImages: ["/feature/11.avif", "/feature/12.avif", "/feature/13.avif", "/feature/14.avif"],
+    featureImages: ["/feature/5svg.svg", "/feature/6.svg", "/feature/7.svg", "/feature/8.svg"],
     ingredients: ["Neem", "Karela", "Jamun", "Gudmar", "Paneer Dodi", "Vijaysar", "Methi", "Triphala"],
     usage: [
       "Mix 1 teaspoon (approx. 3-5g) in a glass of warm water",
@@ -146,11 +146,11 @@ const productsSeed = [
       }
     ],
     images: [
-      "https://res.cloudinary.com/dqk8v040t/image/upload/v1779373549/Neem_Karela_Karela_Jamun_Jamun_202605211954_qzetr5.jpg",
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1780850255/Change_product_replace_capsule_p__202606072207_kns7uy.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195353/1777193733492_toeqjr.png",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195352/Picsart_26-04-26_14-30-55-002.jpg_luyjfr.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1779443182/Change_features_to_this_202605221511_euem6e.jpg",
-      "https://res.cloudinary.com/dqk8v040t/image/upload/v1776877675/5_kk8kp0.webp",
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1781105594/add_more_testominials_1st_image_202606102048_xh8ut3.jpg",
     ],
     videoUrl: "rSHVqwhmN7h7TcJMz5sV4015UZ5KlXBtVBf6EQ1fs00uA",
     formulaimage: "https://res.cloudinary.com/dqk8v040t/image/upload/v1777224607/Gemini_Generated_Image_u9yomou9yomou9yo_stdhwj.png",
@@ -174,7 +174,7 @@ const productsSeed = [
       "Helps Boost Immunity*",
       "Helps Detoxify Body*"
     ],
-    featureImages: ["/feature/11.avif", "/feature/12.avif", "/feature/13.avif", "/feature/14.avif"],
+    featureImages: ["/feature/5svg.svg", "/feature/6.svg", "/feature/7.svg", "/feature/8.svg"],
     ingredients: ["Neem", "Karela", "Jamun", "Gudmar", "Paneer Dodi", "Vijaysar", "Methi", "Triphala"],
     usage: [
       "Take 1-2 capsules twice daily",
@@ -228,13 +228,14 @@ const productsSeed = [
         comment: "Bahut effective aur natural hai. Doctor ne Ayurvedic support try karne ko bola tha, aur ye capsules game-changer nikle. Made in India hai pure ingredients ke saath, bahut accha lagta hai. Quality mein results dikhte hain."
       }
     ],
-     images: [
+    images: [
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1780393609/ingridents_fuctions_text_bug_202606021514_qmwzdh.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1780393609/make_it_clean_proffesinal_product_202606021516_swnukh.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1780393609/change_product_of_1st_image_202606021516_1_vyxenh.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1777195351/1777191660191_n51lsm.png",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1780393609/change_product_of_1st_image_202606021516_hec084.jpg",
       "https://res.cloudinary.com/dqk8v040t/image/upload/v1780393757/change_product_of_1st_image_202606021519_p8ggyx.jpg",
+      "https://res.cloudinary.com/dqk8v040t/image/upload/v1781105594/add_more_testominials_1st_image_202606102048_xh8ut3.jpg",
     ],
     formulaimage: "https://res.cloudinary.com/dqk8v040t/image/upload/v1777224607/Gemini_Generated_Image_psf0w6psf0w6psf0_yzzqli.png",
     rating: 4.8,
@@ -279,7 +280,7 @@ async function syncProducts() {
       console.error("MONGODB_URI not found in environment");
       process.exit(1);
     }
-    
+
     await mongoose.connect(MONGODB_URI);
     console.log("Connected to MongoDB");
 

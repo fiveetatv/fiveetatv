@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
 import { useAuth } from "@/context/AuthContext";
-import { Menu, ShoppingBag, UserRound, X, Search, LayoutDashboard, Heart, ChevronDown, LogOut, Leaf, Phone, Star } from "lucide-react";
+import { Menu, ShoppingBag, UserRound, X, Search, LayoutDashboard, Heart, ChevronDown, LogOut, Leaf, Phone, Star, Home } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 import { NAV_LINKS, PRODUCT_CATEGORIES } from "./nav-config";
@@ -25,15 +25,15 @@ const AnnouncementBar = () => (
       <div className="hidden md:flex items-center gap-6">
         <div className="flex items-center gap-1.5">
           <Phone size={12} className="text-white/80" />
-          <span>Call Now: <a href="tel:+919318445297" className="hover:underline">+91 9318445297</a></span>
+          <span>Call Now: <a href="tel:+919318445297" className="hover:underline">+91 9318445297</a> / <a href="tel:+919220251059" className="hover:underline">+91 9220251059</a></span>
         </div>
       </div>
 
       <div className="flex items-center gap-4">
-        <a href="#" className="hover:text-white/80 transition-colors">
+        <a href="https://www.facebook.com/share/18iTV2DwvQ/" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
           <FaFacebookF size={12} />
         </a>
-        <a href="#" className="hover:text-white/80 transition-colors">
+        <a href="https://www.instagram.com/fiveetatvofficial?igsh=cDhyOTBkYm1tcmR5" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
           <FaInstagram size={14} />
         </a>
         <a href="https://wa.me/919318445297" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
@@ -57,6 +57,7 @@ export default function Navbar() {
   const { wishlistItems } = useWishlist();
   const { user, logout } = useAuth();
   const router = useRouter();
+  const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -363,10 +364,10 @@ export default function Navbar() {
                 <a href="https://wa.me/919318445297" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <FaWhatsapp size={20} />
                 </a>
-                <a href="#" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                <a href="https://www.instagram.com/fiveetatvofficial?igsh=cDhyOTBkYm1tcmR5" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <FaInstagram size={20} />
                 </a>
-                <a href="#" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                <a href="https://www.facebook.com/share/18iTV2DwvQ/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <FaFacebookF size={20} />
                 </a>
               </div>
@@ -375,6 +376,41 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Mobile Bottom Navigation Bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-[60] lg:hidden bg-white/95 backdrop-blur-md border-t border-black/5 shadow-[0_-8px_30px_rgb(0,0,0,0.04)] px-4 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
+        <div className="flex justify-between items-center max-w-md mx-auto">
+          {[
+            { label: "Home", href: "/", icon: Home },
+            { label: "Search", href: "/search", icon: Search },
+            { label: "Cart", href: "/cart", icon: ShoppingBag, count: mounted ? cartItems.length : 0 },
+            { label: "Wishlist", href: "/wishlist", icon: Heart, count: mounted ? wishlistItems.length : 0 },
+            { label: "Account", href: mounted && user ? "/account" : "/login", icon: UserRound },
+          ].map((item) => {
+            const Icon = item.icon;
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.label}
+                href={item.href}
+                className={`flex flex-col items-center gap-1 py-1 px-3 rounded-2xl relative transition-all duration-300 ${
+                  isActive ? "text-accent font-medium" : "text-slate-500 hover:text-slate-900"
+                }`}
+              >
+                <div className="relative">
+                  <Icon size={20} strokeWidth={isActive ? 2.5 : 1.5} className="transition-transform duration-300 hover:scale-110" />
+                  {item.count > 0 && (
+                    <span className="absolute -top-1.5 -right-2 h-4 w-4 rounded-full flex items-center justify-center text-[9px] font-light shadow-sm bg-accent text-white">
+                      {item.count}
+                    </span>
+                  )}
+                </div>
+                <span className="text-[10px] tracking-tight">{item.label}</span>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 }

@@ -34,7 +34,10 @@ export default function PolicyCTA() {
               <div className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center">
                 <Phone className="h-5 w-5 text-[#7A9E7E]" />
               </div>
-              <p className="text-sm font-medium">+91 9318445297</p>
+              <div className="flex flex-col items-center">
+                <p className="text-sm font-medium">+91 9318445297</p>
+                <p className="text-sm font-medium">+91 9220251059</p>
+              </div>
             </div>
             <div className="flex flex-col items-center gap-3">
               <div className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center">

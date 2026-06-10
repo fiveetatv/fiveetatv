@@ -133,9 +133,11 @@ export default function ContactPage() {
                   { 
                     icon: Phone, 
                     label: "Call Us", 
-                    value: "9318445297", 
+                    values: [
+                      { text: "9318445297", action: "tel:9318445297" },
+                      { text: "9220251059", action: "tel:9220251059" }
+                    ], 
                     sub: "Mon-Sat, 10am - 6pm IST",
-                    action: "tel:9318445297",
                     delay: 0.1,
                     color: "from-accent/20 to-accent/5",
                     iconColor: "text-accent",
@@ -164,39 +166,72 @@ export default function ContactPage() {
                     iconBg: "bg-foreground/10 hover:bg-foreground hover:text-background"
                   },
                 ].map((item, i) => (
-                  <motion.a
+                  <motion.div
                     key={i}
-                    href={item.action}
                     {...cardVariants}
                     transition={{ delay: item.delay, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     whileHover={{ y: -12, scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
                     className="group relative block overflow-hidden rounded-2xl bg-gradient-to-br bg-white/30 backdrop-blur-sm p-6 border border-border/50 space-y-4 hover:shadow-xl hover:shadow-accent/10 transition-all duration-700"
                   >
                     {/* Animated gradient background on hover */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
                     
                     <div className="relative z-10">
-                      <motion.div 
-                        className={`h-16 w-16 rounded-2xl ${item.iconBg} ${item.iconColor} flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}
-                        whileHover={{ rotate: 5 }}
-                      >
-                        <item.icon size={28} strokeWidth={1.5} />
-                      </motion.div>
+                      {item.values ? (
+                        <div className="h-16 w-16 rounded-2xl bg-accent/10 text-accent flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
+                          <item.icon size={28} strokeWidth={1.5} />
+                        </div>
+                      ) : (
+                        <a href={item.action} target={item.action.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer">
+                          <motion.div 
+                            className={`h-16 w-16 rounded-2xl ${item.iconBg} ${item.iconColor} flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}
+                            whileHover={{ rotate: 5 }}
+                          >
+                            <item.icon size={28} strokeWidth={1.5} />
+                          </motion.div>
+                        </a>
+                      )}
+                      
                       <div className="space-y-3 mt-6">
                         <p className="text-[10px] uppercase tracking-normal font-light text-foreground/40">{item.label}</p>
-                        <h3 className="text-lg font-light text-foreground leading-tight group-hover:text-accent transition-colors duration-500 truncate">{item.value}</h3>
+                        {item.values ? (
+                          <div className="flex flex-col gap-1 z-20 relative">
+                            {item.values.map((val, idx) => (
+                              <a 
+                                key={idx} 
+                                href={val.action} 
+                                className="text-lg font-light text-foreground leading-tight hover:text-accent transition-colors duration-500 block"
+                              >
+                                {val.text}
+                              </a>
+                            ))}
+                          </div>
+                        ) : (
+                          <a 
+                            href={item.action} 
+                            target={item.action.startsWith("http") ? "_blank" : undefined} 
+                            rel="noopener noreferrer" 
+                            className="text-lg font-light text-foreground leading-tight hover:text-accent transition-colors duration-500 truncate block"
+                          >
+                            {item.value}
+                          </a>
+                        )}
                         <p className="text-xs text-foreground/50 font-light">{item.sub}</p>
                       </div>
-                      <motion.div 
-                        className="flex items-center gap-2 text-accent text-xs font-light tracking-[0.05em] mt-6 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                        initial={{ x: -10 }}
-                        whileHover={{ x: 0 }}
-                      >
-                        Connect <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform duration-300" />
-                      </motion.div>
+                      
+                      {!item.values && (
+                        <a href={item.action} target={item.action.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer">
+                          <motion.div 
+                            className="flex items-center gap-2 text-accent text-xs font-light tracking-[0.05em] mt-6 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                            initial={{ x: -10 }}
+                            whileHover={{ x: 0 }}
+                          >
+                            Connect <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform duration-300" />
+                          </motion.div>
+                        </a>
+                      )}
                     </div>
-                  </motion.a>
+                  </motion.div>
                 ))}
               </div>
 
