@@ -12,7 +12,7 @@ const fadeUp = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-[#F8F5EF] pt-24 md:pt-32">
+    <div className="min-h-screen bg-[#F8F5EF] a pt-24 md:pt-32">
       {/* Hero Section */}
       <section className="px-6 py-20 text-center relative overflow-hidden">
         <motion.div {...fadeUp} className="max-w-4xl mx-auto space-y-6 relative z-10">
