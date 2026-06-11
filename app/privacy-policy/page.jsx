@@ -118,8 +118,8 @@ export default function PrivacyPolicyPage() {
             <h3 className="text-2xl font-display text-[#2F3E36]">Contact Us</h3>
             <p>If you have any questions or concerns regarding this Privacy Policy, please contact us:</p>
             <p>
-              <strong>Email:</strong> xxxxxxxxxxxxxx.com<br />
-              <strong>Phone:</strong> +91-XXXXXXXXXX
+              <strong>Email:</strong> fiveetatv@gmail.com<br />
+              <strong>Phone:</strong> +91-9318445297
             </p>
             <p>We will respond to your inquiry within 24-48 hours.</p>
           </div>
